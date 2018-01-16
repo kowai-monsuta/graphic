@@ -33,36 +33,10 @@ def draw_cloud(x, y):
     pygame.draw.rect(screen, WHITE, [x + 20, y + 20, 60, 40])
 
 def draw_line():
-    pygame.draw.line(screen, WHITE, [400, 250], [700, 250], 2)
-    pygame.draw.line(screen, WHITE, [400, 260], [700, 260], 2)
-    pygame.draw.line(screen, WHITE, [400, 270], [700, 270], 2)
-    pygame.draw.line(screen, WHITE, [400, 280], [700, 280], 2)
-    pygame.draw.line(screen, WHITE, [400, 290], [700, 290], 2)
-    pygame.draw.line(screen, WHITE, [400, 300], [700, 300], 2)
-    pygame.draw.line(screen, WHITE, [400, 310], [700, 310], 2)
-    pygame.draw.line(screen, WHITE, [400, 390], [700, 390], 2)
-    pygame.draw.line(screen, WHITE, [400, 380], [700, 380], 2)
-    pygame.draw.line(screen, WHITE, [400, 390], [700, 390], 2)
-    pygame.draw.line(screen, WHITE, [400, 400], [700, 400], 2)
-    pygame.draw.line(screen, WHITE, [400, 390], [700, 390], 2)
-    pygame.draw.line(screen, WHITE, [400, 410], [700, 410], 2)
-    pygame.draw.line(screen, WHITE, [400, 420], [700, 420], 2)
-    pygame.draw.line(screen, WHITE, [400, 430], [700, 430], 2)
-    pygame.draw.line(screen, WHITE, [400, 440], [700, 440], 2)
-    pygame.draw.line(screen, WHITE, [400, 450], [700, 450], 2)
-    pygame.draw.line(screen, WHITE, [400, 460], [700, 460], 2)
-    pygame.draw.line(screen, WHITE, [400, 470], [700, 470], 2)
-    pygame.draw.line(screen, WHITE, [400, 480], [700, 480], 2)
-    pygame.draw.line(screen, WHITE, [400, 490], [700, 490], 2)
-    pygame.draw.line(screen, WHITE, [400, 500], [700, 500], 2)
-    pygame.draw.line(screen, WHITE, [400, 400], [700, 400], 2)
-    pygame.draw.line(screen, WHITE, [400, 320], [700, 320], 2)
-    pygame.draw.line(screen, WHITE, [400, 330], [700, 330], 2)
-    pygame.draw.line(screen, WHITE, [400, 340], [700, 340], 2)
-    pygame.draw.line(screen, WHITE, [400, 350], [700, 350], 2)
-    pygame.draw.line(screen, WHITE, [400, 360], [700, 360], 2)
-    pygame.draw.line(screen, WHITE, [400, 370], [700, 370], 2)
-
+    y = 240
+    for y in range(240,500,10):
+        pygame.draw.line(screen, WHITE, [400, y + 10], [700, y + 10], 2)
+    
 def draw_window(x,y):
     pygame.draw.rect(screen, YELLOWW, [x + 20, y + 20,60,70])
     
